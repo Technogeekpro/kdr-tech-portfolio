@@ -46,8 +46,7 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Full Stack Software Engineer with experience in Website,
-          Mobile, and Software development. Check out my projects and skills.
+          I&apos;m a passionate Flutter developer and UI/UX designer with over 5 years of experience.
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
