@@ -33,3 +33,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+path/to/key
+/Users/arbazkdr/Downloads/Space-Portolio-main/key
+/Users/arbazkdr/Desktop/key/key

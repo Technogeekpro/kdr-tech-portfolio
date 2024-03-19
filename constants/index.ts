@@ -84,14 +84,17 @@ export const Skill_data = [
     {
       name: "Discord",
       src: "/instagram.svg",
+      url : "https://www.instagram.com/app_developer_kdr/",
     },
     {
       name: "Facebook",
       src: "/facebook.svg",
+      url : "https://www.facebook.com/arbaz.kdr/",
     },
     {
       name: "Instagram",
       src: "/discord.svg",
+      url : ""
     },
   ];
   

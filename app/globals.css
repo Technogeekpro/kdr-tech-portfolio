@@ -64,6 +64,16 @@
   display: none;
 }
 
+@keyframes glowing {
+  0% { box-shadow: 0 0 5px #ff0000, 0 0 25px #ff0000, 0 0 50px #ff0000, 0 0 200px #ff0000; }
+  50% { box-shadow: 0 0 10px #ff0000, 0 0 30px #ff0000, 0 0 60px #ff0000, 0 0 220px #ff0000; }
+  100% { box-shadow: 0 0 5px #ff0000, 0 0 25px #ff0000, 0 0 50px #ff0000, 0 0 200px #ff0000; }
+}
+
+.ring {
+  animation: glowing 2s infinite;
+  border-radius: 50%;
+}
 
 
 html {
