@@ -1,0 +1,3 @@
+const BhaktiDescription = "Bhakti is a seasoned UI/UX Designer with over 5 years of experience in crafting intuitive and beautiful user experiences. She has worked on numerous projects, including mobile applications and web platforms, ensuring that users have a seamless and engaging experience. Bhakti is proficient in tools like Figma, Sketch, and Adobe XD, and has a keen eye for detail and aesthetics. Her expertise in user research, wireframing, and prototyping makes her an invaluable asset to any project. #DesignGuru";
+
+export default BhaktiDescription;

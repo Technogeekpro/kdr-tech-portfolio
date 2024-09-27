@@ -16,7 +16,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] p-4 mt-40 bg-[#1A1A2E]">
+    <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] px-20 py-10 mx-10 mt-40 bg-[#1A1A2E]">
       <div className="flex flex-col md:flex-row gap-10 items-center">
         <div className="w-24 h-24 md:w-32 md:h-32 relative overflow-hidden rounded-full shadow-lg">
           <Image
@@ -28,7 +28,7 @@ const About = () => {
           />
         </div>
         <div className="flex flex-col text-center md:text-left">
-          <h1 className="text-3xl font-semibold text-white">
+          <h1 className="flex flex-col gap-6 mt-6 text-2xl font-bold text-white max-w-[600px] w-auto h-auto">
             Arbaz KDR |{' '}
             <span className="text-[#00ADB5] animate-fade">{roles[currentRole]}</span>
           </h1>

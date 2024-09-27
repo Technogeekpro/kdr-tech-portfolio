@@ -1,0 +1,3 @@
+const RazakDescription = "Abdul Razak is a versatile Manager and Developer with over 7 years of experience in leading projects and developing innovative solutions. He has a strong background in Flutter development, Android development, and mobile application development. Razak has successfully managed teams and delivered high-quality products that meet client expectations. His technical skills, combined with his leadership abilities, make him a key player in any development team. #CodeMaster";
+
+export default RazakDescription;
