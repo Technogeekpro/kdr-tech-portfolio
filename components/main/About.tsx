@@ -43,7 +43,7 @@ const About = () => {
             <li>Native Performance</li>
           </ul>
           <p className="mt-4 text-gray-400 italic">
-            "The only way to do great work is to love what you do." - Arbaz KDR
+            &quot;The only way to do great work is to love what you do.&quot; - Arbaz KDR
           </p>
         </div>
       </div>
