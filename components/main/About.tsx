@@ -36,14 +36,12 @@ const About = () => {
           <p className="mt-2 text-gray-300">
             Flutter allows for beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.
           </p>
-          <p className="mt-2 text-gray-300">
-            Advantages of Flutter:
-            <ul className="list-disc list-inside">
-              <li>Fast Development</li>
-              <li>Expressive and Flexible UI</li>
-              <li>Native Performance</li>
-            </ul>
-          </p>
+          <p className="mt-2 text-gray-300">Advantages of Flutter:</p>
+          <ul className="list-disc list-inside text-gray-300">
+            <li>Fast Development</li>
+            <li>Expressive and Flexible UI</li>
+            <li>Native Performance</li>
+          </ul>
           <p className="mt-4 text-gray-400 italic">
             "The only way to do great work is to love what you do." - Arbaz KDR
           </p>
