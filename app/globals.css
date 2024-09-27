@@ -35,6 +35,10 @@
   width: max-content;
   transition: 0.45s cubic-bezier(0.6, 0.6, 0, 1) box-shadow;
 }
+.fixed-header {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.3);
+}
 
 .button-primary {
   background: linear-gradient(

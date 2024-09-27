@@ -1,53 +1,83 @@
-import { Socials } from "@/constants";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
-import React from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+  };
+
   return (
-    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
-      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
-        <a
-          href="#about-me"
-          className="h-auto w-auto flex flex-row items-center"
-        >
+    <div className="w-full fixed top-0 shadow-lg z-50">
+      <div className="w-full h-[65px] flex items-center justify-between px-6 md:px-10 bg-white bg-opacity-5 backdrop-blur-md">
+        <a href="#home" className="flex items-center">
           <Image
             src="/NavLogo.png"
             alt="logo"
-            width={70}
-            height={70}
-            className="cursor-pointer hover:animate-slowspin"
+            width={40}
+            height={40}
+            className="cursor-pointer"
           />
-
-          <span className="font-bold ml-[10px] hidden md:block text-gray-300">
-            Arbaz Developer
-          </span>
         </a>
 
-        <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
-          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
-            <a href="#about-me" className="cursor-pointer">
-              About me
-            </a>
-            <a href="#skills" className="cursor-pointer">
-              Skills
-            </a>
-            <a href="#projects" className="cursor-pointer">
-              Projects
-            </a>
-          </div>
+        <div className="absolute left-1/2 transform -translate-x-1/2">
+          <span className="font-bold text-center text-white">KDR TECH</span>
         </div>
 
-        <div className="flex flex-row gap-5">
-          {Socials.map((social) => (
-            <a href={social.url} target="_blank" rel="noopener noreferrer" key={social.name}>
-              <Image
-                src={social.src}
-                alt={social.name}
-                width={24}
-                height={24}
-              />
-            </a>
-          ))}
+        <div className="hidden md:flex space-x-6">
+          <a href="#about" className="text-white hover:text-gray-600">
+            About
+          </a>
+          <a href="#services" className="text-white hover:text-gray-600">
+            Services
+          </a>
+          <a href="#contact" className="text-white hover:text-gray-600">
+            Contact
+          </a>
+        </div>
+
+        <div className="md:hidden flex items-center">
+          <button onClick={toggleDrawer} className="text-white z-50">
+            {isDrawerOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          </button>
+        </div>
+      </div>
+
+      <div
+        className={`fixed inset-0 w-full h-full bg-gray-800 bg-opacity-75 z-40 transform ${
+          isDrawerOpen ? "translate-x-0" : "translate-x-full"
+        } transition-transform duration-300 ease-in-out`}
+      >
+        <div className="absolute top-4 right-4 z-50">
+          <button onClick={toggleDrawer} className="text-white">
+            <FaTimes size={24} />
+          </button>
+        </div>
+        <div className="flex flex-col items-center justify-center h-full">
+          <a
+            href="#about"
+            className="text-white text-2xl mb-4"
+            onClick={toggleDrawer}
+          >
+            About
+          </a>
+          <a
+            href="#services"
+            className="text-white text-2xl mb-4"
+            onClick={toggleDrawer}
+          >
+            Services
+          </a>
+          <a
+            href="#contact"
+            className="text-white text-2xl mb-4"
+            onClick={toggleDrawer}
+          >
+            Contact
+          </a>
         </div>
       </div>
     </div>
