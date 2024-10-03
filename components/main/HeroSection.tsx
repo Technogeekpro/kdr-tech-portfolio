@@ -36,9 +36,11 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous.
+          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl italic font-serif">
+            At <span className="font-bold">KDR Tech</span>, we blend innovation
+            and expertise to deliver cutting-edge solutions. Our passion for
+            technology drives us to create exceptional digital experiences that
+            transform businesses and inspire growth.
           </p>
           <div>
             <Link
