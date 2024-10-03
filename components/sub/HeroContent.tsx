@@ -11,7 +11,7 @@ import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
 const HeroContent = () => {
-  const whatsappNumber = "+919594954543";
+  const whatsappNumber = "+919136667294";
   const whatsappMessage = "Hello, I would like to get in touch with you.";
 
   return (

@@ -67,7 +67,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`fixed inset-0 w-full h-full bg-gray-800 bg-opacity-75 z-40 transform ${
+        className={`fixed inset-0 w-full h-full bg-gray-800 bg-opacity-75 z-[150] transform ${
           isDrawerOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
