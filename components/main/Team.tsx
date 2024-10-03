@@ -3,7 +3,11 @@ import Head from "next/head";
 import ProfileCard from "../sub/ProfileCard";
 import BhaktiDescription from "../descriptions/BhaktiDescription";
 import RazakDescription from "../descriptions/RazakDescription";
-import ImtiyazDescription from "../descriptions/ImtiyazDescription";
+import ApoorvaDescription from "../descriptions/ApoorvaDescription";
+import ArbazDescription from "../descriptions/ArbazDescription";
+import imtiyazDescription from "../descriptions/ImtiyazDescription";
+import KadarDescription from "../descriptions/KadarDescription";
+import App from "next/app";
 
 const Team = () => {
   return (
@@ -81,14 +85,14 @@ const Team = () => {
                 "@type": "Person",
                 name: "Apoorv Pandey",
                 jobTitle: "Backend Developer",
-                description: ImtiyazDescription,
+                description: ApoorvaDescription,
                 image: "https://www.kdrtech.in/apoorv.jpg",
               },
             ],
           })}
         </script>
       </Head>
-      <div className="py-12 bg-gray-900">
+      <div id='Team' className="py-12 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
@@ -105,24 +109,46 @@ const Team = () => {
             <div className="flex justify-center">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <ProfileCard
-                  image="/bhakti.jpg"
+                  image="/images/profiles/me.png"
+                  name="Arbaz Kudekar"
+                  role="Lead Developer"
+                  description={ArbazDescription}
+                  quote="#FlutterExpert"
+                />
+                <ProfileCard
+                  image="/images/profiles/bhakti.jpg"
                   name="Bhakti"
                   role="UI/UX Designer"
                   description={BhaktiDescription}
                   quote="#DesignGuru"
                 />
                 <ProfileCard
-                  image="/Razak.jpg"
+                  image="/images/profiles/Razak.jpg"
                   name="Abdul Razak"
                   role="Manager & Developer"
                   description={RazakDescription}
                   quote="#ManagerExtraordinaire"
                 />
+
                 <ProfileCard
-                  image="/imtiyaz.jpg"
+                  image="/images/profiles/kadar.png"
+                  name="Abdul Kadar"
+                  role="Frontend Developer"
+                  description={KadarDescription}
+                  quote="#FrontendMaster"
+                />
+                <ProfileCard
+                  image="/images/profiles/imtiyaz.png"
+                  name="Imtiyaz"
+                  role="Support Engineer"
+                  description={imtiyazDescription}
+                  quote="#SupportNinja"
+                />
+                <ProfileCard
+                  image="/images/profiles/apoorva.jpg"
                   name="Apoorv pandey"
                   role="Backend Developer"
-                  description={ImtiyazDescription}
+                  description={ApoorvaDescription}
                   quote="#BackendWizard"
                 />
                 {/* Add more ProfileCard components as needed */}

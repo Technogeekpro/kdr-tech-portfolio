@@ -46,13 +46,13 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a passionate Flutter developer and UI/UX designer with over 5 years of experience.
+        We are a team of talented developers and designers who are passionate about creating the best projects for our clients. We are always looking for new challenges and opportunities to grow our skills.
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         >
-          Learn More!
+          Get In Touch
         </motion.a>
       </div>
 

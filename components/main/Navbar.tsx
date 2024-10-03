@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -13,30 +14,42 @@ const Navbar = () => {
   return (
     <div className="w-full fixed top-0 shadow-lg z-50">
       <div className="w-full h-[65px] flex items-center justify-between px-6 md:px-10 bg-white bg-opacity-5 backdrop-blur-md">
-        <a href="#home" className="flex items-center">
+        <Link href="#home" className="flex items-center" passHref>
           <Image
-            src="/NavLogo.png"
+            src="/images/kdr-tech-logo.png"
             alt="logo"
             width={40}
             height={40}
             className="cursor-pointer"
           />
-        </a>
+        </Link>
 
         <div className="absolute left-1/2 transform -translate-x-1/2">
           <span className="font-bold text-center text-white">KDR TECH</span>
         </div>
 
         <div className="hidden md:flex space-x-6">
-          <a href="#about" className="text-white hover:text-gray-600">
+          <Link
+            href="#about"
+            className="text-white hover:text-gray-600"
+            passHref
+          >
             About
-          </a>
-          <a href="#services" className="text-white hover:text-gray-600">
-            Services
-          </a>
-          <a href="#contact" className="text-white hover:text-gray-600">
-            Contact
-          </a>
+          </Link>
+          <Link
+            href="#Team"
+            className="text-white hover:text-gray-600"
+            passHref
+          >
+            Experts
+          </Link>
+          <Link
+            href="#Market"
+            className="text-white hover:text-gray-600"
+            passHref
+          >
+            Market Place
+          </Link>
         </div>
 
         <div className="md:hidden flex items-center">
