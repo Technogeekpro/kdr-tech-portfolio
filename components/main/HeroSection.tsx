@@ -59,7 +59,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-10 lg:mt-0"
         >
-          <div className="rounded-full bg-[#000C45] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+          <div className="rounded-full bg-transparent w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
               src="/images/kdr-tech-logo.png"
               alt="hero image"
