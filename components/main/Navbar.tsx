@@ -85,18 +85,18 @@ const Navbar = () => {
             About
           </a>
           <a
-            href="#services"
+            href="#team"
             className="text-white text-2xl mb-4"
             onClick={toggleDrawer}
           >
-            Services
+            Experts
           </a>
           <a
-            href="#contact"
+            href="#market"
             className="text-white text-2xl mb-4"
             onClick={toggleDrawer}
           >
-            Contact
+            Market Place
           </a>
         </div>
       </div>
