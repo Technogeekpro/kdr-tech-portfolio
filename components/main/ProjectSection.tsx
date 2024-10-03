@@ -52,9 +52,9 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="mx-10 z-[100]">
+    <section id="market" className="mx-10 z-[100]">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        My Projects
+        Market Place
       </h2>
 
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">

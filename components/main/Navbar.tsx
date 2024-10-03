@@ -44,11 +44,18 @@ const Navbar = () => {
             Experts
           </Link>
           <Link
-            href="#Market"
+            href="#market"
             className="text-white hover:text-gray-600"
             passHref
           >
             Market Place
+          </Link>
+          <Link
+            href="#projects"
+            className="text-white hover:text-gray-600"
+            passHref
+          >
+            Projects
           </Link>
         </div>
 

@@ -8,8 +8,21 @@ import Footer from "@/components/main/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Space Portfolio",
-  description: "This is my portfolio",
+  title:
+    "KDR Tech Portfolio | Flutter Developer | React Native Developer | Mobile App Developer | Game Developer",
+  description:
+    "Welcome to KDR Tech Portfolio. Arbaz KDR is a skilled Flutter Developer, React Native Developer, Mobile App Developer, and Game Developer. Explore our projects and services to see how we can bring your ideas to life.",
+  keywords:
+    "Flutter Developer, React Native Developer, Mobile App Developer, Game Developer, Cross-Platform Development, iOS Development, Android Development, App Development, Game Development, UI/UX Design, Front-End Development, Full-Stack Development, Arbaz KDR, KDR Tech",
+  viewport: "width=device-width, initial-scale=1.0" as string,
+  robots: "index, follow",
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "KDR Tech Portfolio | Flutter Developer | React Native Developer | Mobile App Developer | Game Developer",
+    description:
+      "Welcome to KDR Tech Portfolio. Arbaz KDR is a skilled Flutter Developer, React Native Developer, Mobile App Developer, and Game Developer. Explore our projects and services to see how we can bring your ideas to life.",
+  },
 };
 
 export default function RootLayout({
@@ -19,6 +32,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="description" content={metadata.description || ""} />
+        <meta
+          name="keywords"
+          content={
+            Array.isArray(metadata.keywords)
+              ? metadata.keywords.join(", ")
+              : metadata.keywords || ""
+          }
+        />
+        <meta name="viewport" content={String(metadata.viewport) || ""} />
+
+        <title>{String(metadata.title) || "Default Title"}</title>
+      </head>
       <body
         className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
       >
