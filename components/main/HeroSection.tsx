@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="lg:py-16 mx-10 z-40">
+    <section className="lg:py-16 mx-10 z-40 mt-40">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -57,13 +57,13 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-4 place-self-center mt-4 lg:mt-0"
+          className="col-span-4 place-self-center mt-10 lg:mt-0"
         >
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+          <div className="rounded-full bg-[#000C45] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
               src="/images/kdr-tech-logo.png"
               alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 p-5 "
               width={300}
               height={300}
             />

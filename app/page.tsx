@@ -6,13 +6,14 @@ import Team from "@/components/main/Team";
 import Encryption from "@/components/main/Encryption";
 import Projects from "@/components/main/Projects";
 import ProjectsSection from "@/components/main/ProjectSection";
-import HeroSection from "@/components/main/HeroSection";
+import AchievementsSection from "@/components/main/AchievementsSection";
 
 export default function Home() {
   return (
     <main className="h-full w-full">
       <div className="container px-0 py-10 flex flex-col gap-10">
-       <HeroSection />
+        <Hero />
+        <AchievementsSection />
         <Skills />
         <About />
         <Team />
