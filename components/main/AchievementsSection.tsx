@@ -15,11 +15,7 @@ const achievementsList = [
     value: "181",
     postfix: "+",
   },
-  {
-    prefix: "~",
-    metric: "Users",
-    value: "18634",
-  },
+
   {
     metric: "Clients",
     value: "273",
@@ -41,9 +37,7 @@ const AchievementsSection = () => {
               className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
             >
               <h2 className="text-white text-4xl font-bold flex flex-row items-center">
-                {achievement.prefix && (
-                  <span className="mr-1">{achievement.prefix}</span>
-                )}
+               
                 <AnimatedNumbers
                   includeComma
                   animateToNumber={parseInt(
