@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /api/
+Disallow: /admin/
+Allow: /
+
+Sitemap: https://www.kdrtech.in/sitemap.xml
+
+# High-ranking keywords related to your niche
+# Flutter Developer, React Native Developer, Mobile App Developer, Game Developer, Cross-Platform Development, iOS Development, Android Development, App Development, Game Development, UI/UX Design, Front-End Development, Full-Stack Development, Arbaz KDR, KDR Tech
