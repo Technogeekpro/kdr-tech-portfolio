@@ -26,7 +26,7 @@ const About = () => {
         <div className="flex flex-col md:flex-row gap-10 items-center">
           <div className="w-24 h-24 md:w-32 md:h-32 relative overflow-hidden rounded-full shadow-lg">
             <Image
-              src="/me.png"
+              src="/images/profiles/me.png"
               alt="me"
               layout="fill"
               objectFit="cover"
