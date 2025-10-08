@@ -5,7 +5,6 @@ import BhaktiDescription from "../descriptions/BhaktiDescription";
 import RazakDescription from "../descriptions/RazakDescription";
 import ApoorvaDescription from "../descriptions/ApoorvaDescription";
 import ArbazDescription from "../descriptions/ArbazDescription";
-import imtiyazDescription from "../descriptions/ImtiyazDescription";
 import KadarDescription from "../descriptions/KadarDescription";
 import App from "next/app";
 
@@ -137,13 +136,7 @@ const Team = () => {
                   description={KadarDescription}
                   quote="#FrontendMaster"
                 />
-                <ProfileCard
-                  image="/images/profiles/imtiyaz.png"
-                  name="Imtiyaz"
-                  role="Support Engineer"
-                  description={imtiyazDescription}
-                  quote="#SupportNinja"
-                />
+                
                 <ProfileCard
                   image="/images/profiles/apoorva.jpg"
                   name="Apoorv pandey"

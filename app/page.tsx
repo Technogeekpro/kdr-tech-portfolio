@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Hero from "@/components/main/Hero";
+import BrandScroll from "@/components/main/BrandScroll";
 import Skills from "@/components/main/Skills";
 import About from "@/components/main/About";
 import Team from "@/components/main/Team";
@@ -14,11 +15,11 @@ export default function Home() {
       <div className="container px-0 py-10 flex flex-col gap-10">
         <Hero />
         <AchievementsSection />
+        
         <Skills />
         <About />
         <Team />
         <Encryption />
-        <ProjectsSection />
         <Projects />
       </div>
     </main>
